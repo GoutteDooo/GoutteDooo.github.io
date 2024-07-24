@@ -1,10 +1,69 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
-  margin: 0 20%;
-  height: 100vh;
+  margin: 0 auto;
+  height: 900px;
   text-align: center;
   text-transform: uppercase;
+  overflow: hidden;
+}
+
+.page {
+  margin: 10px auto;
+  height: 95%;
+  width: 700px;
+  background: rgb(35, 36, 27);
+}
+
+header h1 {
+  margin: 0;
+  padding-top: 20px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+header h2 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.savoir-faire {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 33% 34% 33%;
+  grid-template-areas: "exp pic for" "exp desc for" "sk sk sk";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70%;
+  width: 100%;
+}
+.savoir-faire .experience, .savoir-faire .formations {
+  margin: 10px;
+  border: 5px solid rgb(0, 209, 174);
+}
+.savoir-faire .experience {
+  grid-area: exp;
+}
+.savoir-faire .formations {
+  grid-area: for;
+}
+.savoir-faire .photo {
+  grid-area: pic;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background: rgb(255, 245, 221);
+  margin: auto;
+}
+.savoir-faire .description {
+  grid-area: desc;
+  margin: 10px;
+  border: 5px solid rgb(0, 209, 174);
+}
+.savoir-faire .skills {
+  grid-area: sk;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 245, 221);
 }/*# sourceMappingURL=index.css.map */

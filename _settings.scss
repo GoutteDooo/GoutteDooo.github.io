@@ -1,0 +1,19 @@
+//variables
+$color1 : rgb(35, 36, 27);
+$color2 : rgb(0, 209, 174);
+$color3 : rgb(255, 245, 221);
+
+
+body {
+    margin: 0 auto;
+    height: 900px;;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.page {
+    margin: 10px auto;
+    height: 95%;
+    width: 700px;
+    background: $color1;
+}
