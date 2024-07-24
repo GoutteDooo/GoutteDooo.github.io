@@ -1,0 +1,61 @@
+//variables
+$bg : rgb(12, 0, 56);
+$border : rgb(0, 62, 133);
+$border2 : rgb(0, 99, 212);
+$color1 : rgb(0, 2, 117);
+$color2 : cyan;
+$shadow : rgb(1, 0, 41);
+$white: rgb(235, 235, 235);
+$text1 : tomato;
+$text2 : coral;
+$font : roboto;
+
+@font-face {
+    font-family: "roboto";
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+
+@mixin titleCadre {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top : -20px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 3px solid $border2;
+    background: $color1;
+    font-size: 1.3rem;
+    width: 80%;
+    height: 30px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $white;
+    font-family: $font;
+    list-style: none;
+}
+body {
+    margin: 0 auto;
+    height: 900px;;
+    text-align: center;
+    background: $bg;
+}
+.page {
+    margin: 10px auto;
+    padding: 10px;
+    height: 99%;
+    width: 700px;
+    background: url("https://img.freepik.com/vecteurs-libre/fond-futuriste-degrade-concept-connexion_23-2149104856.jpg") center/cover;
+}
+.cadre {
+    border: 5px solid $border;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 3px $shadow;
+    border-radius: 5px;
+}

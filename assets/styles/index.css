@@ -1,0 +1,310 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "roboto";
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: rgb(235, 235, 235);
+  font-family: roboto;
+  list-style: none;
+}
+
+body {
+  margin: 0 auto;
+  height: 900px;
+  text-align: center;
+  background: rgb(12, 0, 56);
+}
+
+.page {
+  margin: 10px auto;
+  padding: 10px;
+  height: 99%;
+  width: 700px;
+  background: url("https://img.freepik.com/vecteurs-libre/fond-futuriste-degrade-concept-connexion_23-2149104856.jpg") center/cover;
+}
+
+.cadre {
+  border: 5px solid rgb(0, 62, 133);
+  margin: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 10px 10px 3px rgb(1, 0, 41);
+          box-shadow: 10px 10px 3px rgb(1, 0, 41);
+  border-radius: 5px;
+}
+
+.mainCadre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+  margin: 10px auto 20px auto !important;
+  background: rgb(0, 2, 117);
+}
+.mainCadre h1 {
+  margin: 0;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+.mainCadre h2 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+header .toggleBtn {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 10px;
+  font-size: 2rem;
+  border-top: 3px solid rgb(235, 235, 235);
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+header .toggleBtn:hover {
+  border-top: 3px solid cyan;
+}
+header .toggleBtn:hover i {
+  color: cyan;
+}
+header nav {
+  padding: 0 10%;
+  height: 50px;
+  background: rgb(0, 62, 133);
+  position: relative;
+  top: 0;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+header nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 100%;
+  padding: auto 0;
+}
+header nav ul li:hover {
+  color: cyan;
+  cursor: pointer;
+}
+header nav ul li:hover:after {
+  content: "";
+  position: absolute;
+  background: cyan;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+header .hideNav {
+  top: -50px;
+}
+
+main {
+  height: 70%;
+}
+main .savoir-faire {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 33% 40% 27%;
+  grid-template-areas: "exp pic for" "exp desc for" "sk sk sk";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+main .savoir-faire .experience {
+  grid-area: exp;
+}
+main .savoir-faire .experience:before {
+  content: "Expériences";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -20px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: 3px solid rgb(0, 99, 212);
+  background: rgb(0, 2, 117);
+  font-size: 1.3rem;
+  width: 80%;
+  height: 30px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+main .savoir-faire .formations {
+  grid-area: for;
+}
+main .savoir-faire .formations:before {
+  content: "Formations";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -20px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: 3px solid rgb(0, 99, 212);
+  background: rgb(0, 2, 117);
+  font-size: 1.3rem;
+  width: 80%;
+  height: 30px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+main .savoir-faire .photo {
+  grid-area: pic;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background: url("/assets/img/pic.JPG") center/cover;
+  -webkit-box-shadow: 0 0 2px;
+          box-shadow: 0 0 2px;
+  margin: auto;
+}
+main .savoir-faire .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: desc;
+}
+main .savoir-faire .description p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+main .savoir-faire .skills {
+  grid-area: sk;
+  display: grid;
+  gap: 20px;
+  padding: 20px 20px 0 20px !important;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .savoir-faire .skills:before {
+  content: "Compétences";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -20px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: 3px solid rgb(0, 99, 212);
+  background: rgb(0, 2, 117);
+  font-size: 1.3rem;
+  width: 80%;
+  height: 30px;
+  font-weight: bolder;
+  border-radius: 5px;
+  width: 30%;
+  left: 20%;
+}
+main .savoir-faire .infos {
+  position: relative;
+  padding-top: 10px;
+  text-align: left;
+}
+main .savoir-faire .infos h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+  color: tomato;
+}
+main .savoir-faire .infos h4 {
+  color: coral;
+  margin: 0 0 5px 15px;
+  font-size: 0.9rem;
+}
+main .savoir-faire .infos h4::before {
+  content: "○ ";
+  position: absolute;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
+main .savoir-faire .infos p {
+  margin: 0 0 0 20px;
+  font-size: 0.8rem;
+}
+main .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+  padding: 10px 20px;
+  text-align: left;
+  height: 70px;
+}
+main .contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .contact div i {
+  margin-right: 8px;
+}
+main .contact div p {
+  font-size: 0.9rem;
+}
+
+.pagePrint {
+  background: rgb(235, 235, 235);
+}
+.pagePrint * {
+  background: rgb(235, 235, 235);
+  color: black;
+}/*# sourceMappingURL=index.css.map */

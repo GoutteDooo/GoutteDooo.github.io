@@ -1,7 +1,11 @@
-header {
+.mainCadre {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 10px auto 20px auto !important;
+    background: $color1;
     h1 {
         margin: 0;
-        padding-top: 20px;
         letter-spacing: 3px;
         font-weight: 300;
     }

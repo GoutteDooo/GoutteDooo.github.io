@@ -1,0 +1,102 @@
+main {
+    height: 70%;
+    .savoir-faire {
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: 33% 40% 27%;
+        grid-template-areas: "exp pic for"
+        "exp desc for"
+        "sk sk sk";
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        .experience {
+            grid-area: exp;
+            &:before{
+                content:"Expériences";
+                @include titleCadre;
+            }
+        }
+        .formations {
+            grid-area: for;
+            &:before{
+                content:"Formations";
+                @include titleCadre;
+            }
+        }
+        .photo {
+            grid-area: pic;
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            background: url("/assets/img/pic.JPG") center/cover;
+            box-shadow: 0 0 2px;
+            margin: auto;
+        }
+        .description {
+            display: flex;
+            align-items: center;
+            grid-area: desc;
+            p{
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+        .skills {
+            grid-area: sk;
+            display: grid;
+            gap : 20px;
+            padding: 20px 20px 0 20px !important;
+            grid-template-columns: repeat(3, 1fr);
+            &:before{
+                content:"Compétences";
+                @include titleCadre;
+                width: 30%;
+                left : 20%;
+            }
+        }
+        .infos {
+            position: relative;
+            padding-top: 10px;
+            text-align: left;
+            h3{
+                margin: 10px 0 5px 0;
+                font-size: 1.1rem;
+                color: $text1;
+            }
+            h4{
+                &::before{
+                    content:"○ ";
+                    position: absolute;
+                    transform: translateX(-15px);
+                }
+                color: $text2;
+                margin: 0 0 5px 15px;
+                font-size: 0.9rem;
+            }
+            p{
+                margin: 0 0 0 20px;
+                font-size: 0.8rem;
+            }
+
+        }
+    }
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding: 10px 20px;
+        text-align: left;
+        height: 70px;
+        div{
+            i{
+                margin-right: 8px;
+            }
+            display: flex;
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
