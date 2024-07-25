@@ -46,6 +46,18 @@ header{
                         top: 0;
                     }
                 }
+                a{
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    text-decoration: none;
+                    height: 100%;
+                    padding: auto 0;
+                    &:hover{
+                        color: $color2;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
