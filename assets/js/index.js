@@ -7,11 +7,11 @@ button.addEventListener("click", () => {
   if (navOn) {
     navOn = false;
     button.style.transform = "rotate(180deg)";
-    // nav.style.top = "-50px";
+    button.style.opacity = 0.2;
   } else {
     navOn = true;
     button.style.transform = "rotate(0deg)";
-    // nav.style.top = "0px";
+    button.style.opacity = 1;
   }
 });
 
