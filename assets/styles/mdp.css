@@ -15,7 +15,7 @@ label{
     margin: 20px 0;
     font-size: 1.3rem;
 }
-input[type=text]{
+input[type=password]{
     height: 30px;
     border-radius: 10px;
     padding-left: 10px;
