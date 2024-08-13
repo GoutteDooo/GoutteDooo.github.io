@@ -1,18 +1,22 @@
 const password = "bonjour";
 let nbrEssais;
-
+let passwordLock = true;
+localStorage.passwordLock = passwordLock;
+/* STORAGE */
 if (localStorage.nbrEssais > 0) {
   nbrEssais = localStorage.nbrEssais;
 } else {
   nbrEssais = 0;
 }
 
-enter.addEventListener("click", () => {
-  console.log(JSON.parse(nbrEssais));
+/* FIN STORAGE */
 
+enter.addEventListener("click", (e) => {
   if (mdp.value == "bonjour" && nbrEssais < 3) {
     window.location.href = "./CV.html";
     localStorage.nbrEssais = JSON.parse(0);
+    passwordLock = false;
+    localStorage.passwordLock = JSON.parse(passwordLock);
   } else if (nbrEssais >= 3) {
     alert("Trop de tentatives ! Veuillez réessayer dans 5 minutes.");
     setTimeout(() => {
