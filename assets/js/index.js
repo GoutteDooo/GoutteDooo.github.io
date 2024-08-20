@@ -30,7 +30,7 @@ if (localStorage.passwordLock == "false") {
   });
   numVersion.addEventListener("click", () => {
     page.classList.remove("pagePrint");
-    photo.style.background = "url(/assets/img/pic.JPG) center/cover";
+    photo.style.background = "url(/assets/img/#.JPG) center/cover";
   });
   // window.onscroll = function () {
   //   if (window.scrollY > 0) {

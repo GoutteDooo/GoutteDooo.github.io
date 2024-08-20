@@ -72,14 +72,14 @@ header .toggleBtn {
   transition: 0.1s ease-out;
 }
 header .toggleBtn:hover {
-  border-top: 3px solid cyan;
+  border-top: 3px solid orange;
 }
 header .toggleBtn:hover i {
-  color: cyan;
+  color: orange;
 }
 header nav {
   padding: 0 10%;
-  height: 50px;
+  height: 60px;
   background: rgb(0, 62, 133);
   position: relative;
   top: 0;
@@ -106,16 +106,17 @@ header nav ul li {
           align-items: center;
   position: relative;
   height: 100%;
-  padding: auto 0;
+  padding: auto 10px;
+  margin: 0 10px 0 10px;
 }
 header nav ul li:hover {
-  color: cyan;
+  color: orange;
   cursor: pointer;
 }
 header nav ul li:hover:after {
   content: "";
   position: absolute;
-  background: cyan;
+  background: orange;
   height: 3px;
   width: 100%;
   left: 0;
@@ -134,11 +135,11 @@ header nav ul li a {
   padding: auto 0;
 }
 header nav ul li a:hover {
-  color: cyan;
+  color: orange;
   cursor: pointer;
 }
 header .hideNav {
-  top: -50px;
+  top: -60px;
 }
 
 main {
@@ -214,7 +215,7 @@ main .savoir-faire .photo {
   height: 180px;
   width: 180px;
   border-radius: 50%;
-  background: url("/assets/img/pic.JPG") center/cover;
+  background: url("../../img/#.JPG") center/cover;
   -webkit-box-shadow: 0 0 2px;
           box-shadow: 0 0 2px;
   margin: auto;
@@ -231,6 +232,7 @@ main .savoir-faire .description {
 main .savoir-faire .description p {
   font-size: 1rem;
   font-weight: bold;
+  line-height: 1.5;
 }
 main .savoir-faire .skills {
   grid-area: sk;
