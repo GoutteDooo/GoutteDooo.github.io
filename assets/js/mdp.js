@@ -8,6 +8,7 @@ if (localStorage.nbrEssais > 0) {
 } else {
   nbrEssais = 0;
 }
+let hintClicked = false;
 
 /* FIN STORAGE */
 
@@ -32,4 +33,14 @@ enter.addEventListener("click", (e) => {
 
 mdp.addEventListener("keypress", (e) => {
   if (e.key == "Enter") enter.click();
+});
+
+mdp.addEventListener("keypress", (e) => {
+  if (e.key == "Enter") enter.click();
+});
+
+hintBtn.addEventListener("click", (e) => {
+  hintClicked = !hintClicked;
+  if (hintClicked) tipText.style.opacity = 1;
+  else tipText.style.opacity = 0;
 });

@@ -4,7 +4,7 @@ main {
         display: grid;
         grid-template-columns: 33% 34% 33%;
         grid-template-rows: 33% 40% 27%;
-        grid-template-areas: "exp pic for"
+        grid-template-areas: "exp desc for"
         "exp desc for"
         "sk sk sk";
         justify-content: center;

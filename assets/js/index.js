@@ -30,7 +30,8 @@ if (localStorage.passwordLock == "false") {
   });
   numVersion.addEventListener("click", () => {
     page.classList.remove("pagePrint");
-    photo.style.background = "url(/assets/img/#.JPG) center/cover";
+    //Remettre avec la photo ---V
+    // photo.style.background = "url(/assets/img/#.JPG) center/cover";
   });
   // window.onscroll = function () {
   //   if (window.scrollY > 0) {

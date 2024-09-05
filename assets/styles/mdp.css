@@ -3,13 +3,42 @@ body {
     color: white;
     height: 100vh;
 }
-body div {
+body div.mdp {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
+
+.tip {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    opacity: 0;
+}
+
+.hint {
+    border-radius: 10px;
+    margin-top: 20px;
+    background: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px whitesmoke;
+}
+
+.hint:hover {
+    background: rgba(255, 255, 255, 0.253);
+    transition: 0.2s;
+}
+
+.hint:active {
+    box-shadow: 0 0;
+    transform: translateY(5px);
+}
+
 label{
     font-family: Arial, Helvetica, sans-serif;
     margin: 20px 0;
@@ -22,6 +51,8 @@ input[type=password]{
     font-size: 1.2rem;
     width: 200px;
     margin-bottom: 20px;
+    background: rgb(12, 0, 56);
+    color: white;
 }
 input[type=button]{
     height: 45px;
@@ -42,4 +73,8 @@ input[type=button]:hover{
 input[type=button]:active{
     box-shadow: 0px 0px;
     transform: translateY(5px);
+}
+
+div.lol {
+    font-style: italic;
 }
