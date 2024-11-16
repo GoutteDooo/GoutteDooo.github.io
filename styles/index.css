@@ -8,7 +8,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: rgb(235, 235, 235);
+  color: rgb(230, 230, 230);
   font-family: roboto;
   list-style: none;
   -webkit-user-select: none;
@@ -22,12 +22,18 @@ body {
   height: 900px;
   text-align: center;
   background: rgb(12, 0, 56);
+  overflow: hidden;
+}
+
+/* Si print est activé */
+body:has(.pagePrint) {
+  background: whitesmoke;
 }
 
 .page {
-  margin: 10px auto;
+  margin: 0px auto;
   padding: 10px;
-  height: 99%;
+  height: 100vh;
   width: 700px;
   background: url("https://img.freepik.com/vecteurs-libre/fond-futuriste-degrade-concept-connexion_23-2149104856.jpg") center/cover;
 }
@@ -70,7 +76,7 @@ header .toggleBtn {
   left: 20px;
   top: 10px;
   font-size: 2rem;
-  border-top: 3px solid rgb(235, 235, 235);
+  border-top: 3px solid rgb(230, 230, 230);
   cursor: pointer;
   -webkit-transition: 0.1s ease-out;
   transition: 0.1s ease-out;
@@ -216,8 +222,8 @@ main .savoir-faire .formations:before {
 }
 main .savoir-faire .photo {
   grid-area: pic;
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   background: url("../../assets/img/CV.JPG") center/cover;
   background-size: 150%;
@@ -245,16 +251,9 @@ main .savoir-faire .skills {
   gap: 20px;
   padding: 20px 20px 0 20px !important;
   grid-template-columns: repeat(3, 1fr);
-  height: 175px;
-  justify-items: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-}
-main .savoir-faire .skills div {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  text-align: center;
 }
 main .savoir-faire .skills:before {
   content: "Compétences";
@@ -311,7 +310,7 @@ main .contact {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 10px;
   padding: 10px 20px;
   text-align: left;
   height: 70px;
@@ -344,12 +343,15 @@ main .contact div p::selection {
 }
 
 .pagePrint {
-  background: rgb(235, 235, 235);
+  background: rgb(230, 230, 230);
 }
 .pagePrint * {
-  background: rgb(235, 235, 235);
-  color: black;
+  background: rgb(230, 230, 230);
+  color: black !important;
+  -webkit-box-shadow: 0 0 0 0 rgb(143, 143, 143);
+          box-shadow: 0 0 0 0 rgb(143, 143, 143);
 }
 .pagePrint *::before {
-  background: rgb(235, 235, 235) !important;
+  background: rgb(230, 230, 230) !important;
+  color: black;
 }/*# sourceMappingURL=index.css.map */
