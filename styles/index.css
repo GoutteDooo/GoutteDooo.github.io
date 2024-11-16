@@ -247,6 +247,9 @@ main .savoir-faire .skills {
   grid-template-columns: repeat(3, 1fr);
   height: 175px;
   justify-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 main .savoir-faire .skills div {
   -webkit-transform: translateY(20px);

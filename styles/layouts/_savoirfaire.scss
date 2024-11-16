@@ -52,6 +52,7 @@ main {
             grid-template-columns: repeat(3, 1fr);
             height: 175px;
             justify-items: center;
+            align-items: start;
             div {
                 transform: translateY(20px);
                 text-align: center;
