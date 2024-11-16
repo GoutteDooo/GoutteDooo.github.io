@@ -3,5 +3,8 @@
     * {
         background: $white;
         color: black;
+        &::before {
+            background: $white !important;
+        }
     }
 }

@@ -38,6 +38,7 @@ $font : roboto;
     color: $white;
     font-family: $font;
     list-style: none;
+    user-select: none;
 }
 body {
     margin: 0 auto;
@@ -56,6 +57,6 @@ body {
     border: 5px solid $border;
     margin: 10px;
     padding: 10px;
-    box-shadow: 10px 10px 3px $shadow;
+    box-shadow: 0px 0px 10px 5px $shadow;
     border-radius: 5px;
 }
